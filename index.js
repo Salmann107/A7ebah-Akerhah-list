@@ -13,9 +13,14 @@ app.get('/', (req, res) => {
 })
 //favourite animals
 app.get('/animals', (req,res) => {
-    res.render('animals.ejs', {animals: ['sand crab', 'corny joke', 'bendicat the sea cucumber']
-})
-})
+    res.render('animal.ejs', {animals: ['sand crab', 'corny joke', 'bendicat the sea cucumber','lion']
+})})
+
+//favourite food
+app.get('/food', (req,res) => {
+    res.render('food.ejs', {foods: ['chocolate', 'corn', 'mansaf','shawrma']
+})})
+
 
 app.listen(PORT, () => {
     console.log('You are running the app')
